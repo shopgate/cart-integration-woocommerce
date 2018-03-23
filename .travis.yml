@@ -1,0 +1,22 @@
+dist: precise
+sudo: false
+language: php
+
+before_script:
+- composer install
+
+jobs:
+  include:
+  - stage: deploy
+    php: 5.6
+    before_script: skip
+    script:
+    - if [[ "$TRAVIS_TAG" ]]; then ./release/build_release_package.sh ; fi
+    deploy:
+      provider: releases
+      api_key:
+        secure: gn7eV7lAvzubn+xpPttXoKAmk85pSx2aNcPufdVXDAsTCGHumwX6lkMTfvLYLKXC4Q3lm2mvZlhK7Z3K4jD4JHIQlNGlyNz8JZU/hAETwyjCCXAi1r5Kjp1GbbdnqCoaS7EldBxqcJGoW9Qmu4tuEp5yTjkPqYZUXreIdvMRYUAyANHkvH2/uHKXQmNmnIZzl1jrQnzBeqwOJqdFSioaPxWFJJM5IGvoa1Cj/ufTkycgSpO7G50wU03r3/XKPRZE5X9tyJ71wZRwl/IWAmHPFv+Wd0KWprRH2/4stedO3EG5VWU5uS3IcE9lbn3UUFTPSBLwsqpQEC30vv58LNQEyFlcmQyqFIdzB3YUJzvu6cj4/g6aWrQdJlrtPPOoWNpC2DdcTtrKKFutx6QeiCcRNLozTeV+fG1GeJyg9j7rfzI4SKxkixehyQMjHsEEUS1Nu8qEFgnYSeRlzaS15FUhSD6hmT45DiQk3PLLyrKzdOJ/96L+buX271vQ7dyVYetDT1LDfUEDSYWh1IJitZolpnWt2KhaHLHrxFJi9I8l2EfRLsfhDyunkwmtyIKRQ/OQ0M8R+l+GlO3vXXkV4iTcju19OzweFoO2dhlYidCJtjdvhgwvmffMxRpS412JUrJQuAY6nu/viR0k16Ph/zRqL/g8GE9yxa9BJofkCY0Tj5Y=
+      file: shopgate-woocommerce-integration.zip
+      skip_cleanup: true
+      on:
+        tags: true

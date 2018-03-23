@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "9cb338d010e10867dd6f590fdae2519a",
+    "content-hash": "af666cf6cc4197f8b5ea39e3a04cc555",
+    "packages": [
+        {
+            "name": "shopgate/cart-integration-sdk",
+            "version": "2.9.60",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shopgate/cart-integration-sdk.git",
+                "reference": "396ac06acdfc81cae9cbeed86d7b252b268413e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shopgate/cart-integration-sdk/zipball/396ac06acdfc81cae9cbeed86d7b252b268413e3",
+                "reference": "396ac06acdfc81cae9cbeed86d7b252b268413e3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "./shopgate.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Shopgate",
+                    "email": "interfaces@shopgate.com"
+                }
+            ],
+            "description": "A PHP framework supporting the implementation of the Shopgate Plugin API and abstracts access to the Shopgate Merchant API.",
+            "time": "2016-12-15 15:19:36"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3"
+    },
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.3.3"
+    }
+}

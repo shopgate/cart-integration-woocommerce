@@ -1,0 +1,22 @@
+{
+  "name": "shopgate/cart-integration-woocommerce",
+  "description": "Integrates the WooCommerce shopping cart solution with Shopgate",
+  "homepage": "https://github.com/shopgate/cart-integration-woocommerce",
+  "license": "Apache-2.0",
+  "config": {
+    "platform": {
+      "php": "5.3.3"
+    },
+    "vendor-dir": "src/vendor"
+  },
+  "authors": [
+    {
+      "name": "Shopgate",
+      "email": "interfaces@shopgate.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "shopgate/cart-integration-sdk" : "2.9.60"
+  }
+}

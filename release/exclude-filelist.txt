@@ -1,0 +1,7 @@
+.git/
+.gitignore
+.travis.yml
+.travis.yml
+build_release_package.sh
+release/
+shopgate-woocommerce-integration.zip

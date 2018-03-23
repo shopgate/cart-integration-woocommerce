@@ -1,0 +1,9 @@
+.DS_Store
+src/vendor
+/.buildpath
+/.project
+/*.zip
+/nbproject
+/.settings
+/.idea
+/release/package
