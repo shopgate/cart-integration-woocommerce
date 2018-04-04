@@ -6,7 +6,7 @@
 The Shopgate WooCommerce integration allows you to connect your WooCommerce store with the Shopgate backend.
 
 ## Getting Started
-Download and unzip the [latest releases](https://github.com/shopgate/cart-integration-woocommerce/releases/latest) into the root folder of your Shopware installation.
+Download and unzip the [latest releases](https://github.com/shopgate/cart-integration-woocommerce/releases/latest) into the plugins folder of your Wordpress installation.
 
 ## Installation and Documentation
 
