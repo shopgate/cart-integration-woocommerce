@@ -91,6 +91,7 @@ if ( ! class_exists( 'SG_Export_Cart' ) ) :
 			$coupons = [];
 			foreach ( $this->shopgate_cart->getExternalCoupons() as $external_coupon ) {
 
+				$external_coupon->setCode( wc_format_coupon_code( $external_coupon->getCode() ) );
 				$this->woocommerce_cart->remove_coupon( $external_coupon->getCode() );
 				$is_valid = $this->woocommerce_cart->add_discount( $external_coupon->getCode() );
 
