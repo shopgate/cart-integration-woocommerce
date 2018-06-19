@@ -40,6 +40,7 @@ if ( ! class_exists( 'SG_Export' ) ) :
 			$shopgate_customer->setCustomerId( $wordpress_user->ID );
 			$shopgate_customer->setFirstName( $wordpress_user->user_firstname );
 			$shopgate_customer->setLastName( $wordpress_user->user_lastname );
+			$shopgate_customer->setMail( $wordpress_user->user_email );
 
 			$local_shopgate_customer = new SG_Shopgate_Customer();
 			$local_shopgate_customer = $local_shopgate_customer->load_by_customer_id( $wordpress_user->ID );

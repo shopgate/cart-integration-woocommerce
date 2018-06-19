@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## [Unreleased]
 ### Fixed
 - Format external coupon code so value can be found by WooCommerce
+- Get_customer returns mail parameter for proper login on Shopgate side
 
 ## 2.9.0
 ### Added
